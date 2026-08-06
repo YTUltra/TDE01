@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bhaskara.MainPage"
+             Title="Calculadora de Bhaskara">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="20,20,20,20"
+            Spacing="25">
+
+            <Image
+                Source="bhaskaraf.png"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Digite os valores A, B e C:"
+                FontSize="Medium" />
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="A:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="A"
+                    Placeholder="0"
+                    Keyboard="Numeric" />
+                <Label
+                    Text="B:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="B"
+                    Placeholder="0"
+                    Keyboard="Numeric" />
+                <Label
+                    Text="C:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="C"
+                    Placeholder="0"
+                    Keyboard="Numeric" />
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="Calcular"
+                Text="Calcular Raízes" 
+                Clicked="Calcular_Clicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
